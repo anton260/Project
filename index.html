@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Project</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body> 
     <header>
         <div class="container">
@@ -65,52 +66,71 @@
     <section class="projects">
         <h2>Our Projects</h2>
         
-        <div class="first-row-container">
-            <article class="project-item large">
-                <div class="overlay">
-                    <h3>Sample Project</h3>
-                    <a href="projects.html" class="view-more">View More</a>
+        <section class="projects py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://cdn.pixabay.com/photo/2024/09/15/21/50/house-plans-9050076_1280.png" alt="Project 5" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="projects.html" class="btn btn-outline-dark">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://i.nerukhomi.ua/nerukhomi/novostrojki/1571/1/1/zhk-tetris-hall-kiev-366.webp?size=770x513" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor.</p>
+                                <a href="projects.html" class="btn btn-outline-dark">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://static9.depositphotos.com/1007080/1145/i/450/depositphotos_11453025-stock-photo-house.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">A auctor est felis ut nisl lorem ipsum.</p>
+                                <a href="projects.html" class="btn btn-outline-dark">View More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="project-item small">
-                <img src="img\image15.png" alt="Project 2">
-            </article>
-        </div>
-    
-        <div class="project-item-row">
-            <article class="project-item small">
-                <img src="img\image16.png" alt="Project 3">
-            </article>
-            <article class="project-item small">
-                <img src="img\image17.png" alt="Project 4">
-            </article>
-            <article class="project-item small">
-                <img src="img\image18.png" alt="Project 5">
-            </article>
-        </div>
-
-        <div class="all-projects-container">
-            <a href="gallery.html" class="all-projects">All Projects</a>
-        </div>
+            </div>
+        </section>
     </section>
 
     <section class="contact">
-        <div class="contact-header">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="contact-container">
-            <article class="contact-form">
+        <div class="container contact-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
                 <form>
-                    <input type="text" placeholder="Name">
-                    <input type="tel" placeholder="Phone Number">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Interested In">
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send Email</button>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send Email</button>
                 </form>
-            </article>
+            </div>
+    
             <div class="contact-image">
-                <img src="img\image12.png" alt="Contact Image">
+                <img src="img/image12.png" alt="Contact Illustration">
             </div>
         </div>
     </section>
