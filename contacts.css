@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-section {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-info {
+    width: 45%;
+    color: #333;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 span {
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.contact-info .contact-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-info .contact-button:hover {
+    background-color: #555;
+}
+
+.contact-map {
+    width: 45%;
+}
+
+.contact-map iframe {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Секція footer */
+footer {
+    background-color: #333; /* Темний фон */
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 8px;
+}
+
+.footer-left ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-center address p, .footer-right .social-media a {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-right .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+/* Секція menu */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+}
+
+nav.main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.main-menu ul li {
+    margin-left: 40px;
+}
+
+nav.main-menu ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 10px;
+}
+
+nav.main-menu ul li a:hover, nav.main-menu ul li a.active {
+    color: black;
+}
+
+nav.main-menu ul li a.active::after, nav.main-menu ul li a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
